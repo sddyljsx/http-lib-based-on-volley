@@ -25,6 +25,7 @@ import neal.http.impl.request.GsonRequest;
 import neal.http.impl.request.JsonObjectRequest;
 import neal.http.impl.request.MultipartRequest;
 import neal.http.impl.request.StringRequest;
+import neal.http.ui.CircleNetImageView;
 import neal.http.ui.RecyclingNetImageView;
 import neal.test.R;
 import neal.test.model.PeopleList;
@@ -163,7 +164,7 @@ public class TestHttp extends Activity {
             if(convertView==null){
                 convertView= View.inflate(TestHttp.this, R.layout.image_list_item, null);
                 viewHolder=new ViewHolder();
-                viewHolder.imageListImage=(RecyclingNetImageView)convertView.findViewById(R.id.image_list_image);
+                viewHolder.imageListImage=(CircleNetImageView)convertView.findViewById(R.id.image_list_image);
                 viewHolder.imageListText=(TextView)convertView.findViewById(R.id.image_list_text);
                 convertView.setTag(viewHolder);
             }else{
@@ -175,7 +176,7 @@ public class TestHttp extends Activity {
         }
 
         private class ViewHolder{
-            RecyclingNetImageView imageListImage;
+            CircleNetImageView imageListImage;
             TextView imageListText;
         }
     }
