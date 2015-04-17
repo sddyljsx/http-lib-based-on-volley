@@ -25,7 +25,7 @@ Http类包含了一系列的静态方法，不同的方法适用于不同的使�
 如下图中红框代码所示，额外添加了CacheWriter类，在这里新开一个线程处理缓存写入IO。
 ![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/002.png?raw=true)
 
-**三、扩展的更丰富的功能。轻松实现get，post异步同步访问；与gson结合，轻松处理json文件；网络图片异步加载；上传，下载文件。**
+**三、扩展的更丰富的功能。轻松实现get，post异步同步访问；与gson结合，轻松处理json文件；网络图片异步加载；上传，下载小文件。**
 
 使用方法示例：
 
@@ -35,6 +35,33 @@ Http.init(getApplicationContext());
 
 2、Http post请求的一个例子：
 ![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/003.png?raw=true)
+
+将网络返回的json文件流通过gson直接变为对应的对象，非常方便。
+
+3、get，下载，上传小文件等方法详见Http类。
+
+**四、网络图片请求**
+
+示例代码如下所示：
+
+一个setImageUrl函数搞定一切！
+![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/004.png?raw=true)
+
+效果图：
+![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/005.png?raw=true)
+
+除了RecyclingNetImageView，还有CircleNetImageView，直接将图片转化为圆形样式。当然你也可以自己定制自己喜欢的样式。
+
+效果图：
+
+![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/006.png?raw=true)
+
+另外，所有的网络图片都继承自RecyclingImageView，有效的实现了Bitmap的自动回收。
+
+**五、不足之处，大家批评指正！**
+
+
+
 
 
 
