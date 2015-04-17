@@ -50,6 +50,7 @@ Http.init(getApplicationContext());
 ![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/004.png?raw=true)
 
 效果图：
+
 ![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/005.png?raw=true)
 
 除了RecyclingNetImageView，还有CircleNetImageView，直接将图片转化为圆形样式。当然你也可以自己定制自己喜欢的样式。
