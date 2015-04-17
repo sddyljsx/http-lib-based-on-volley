@@ -29,7 +29,12 @@ Http类包含了一系列的静态方法，不同的方法适用于不同的使�
 
 使用方法示例：
 
-初始化： Http.init(getApplicationContext());
+1、初始化： 
+
+Http.init(getApplicationContext());
+
+2、Http post请求的一个例子：
+![](https://github.com/sddyljsx/android-http-lib-based-on-volley/blob/master/003.png?raw=true)
 
 
 
